@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/padding_login"
+    android:background="@color/colorBackgroundLogin"
+    tools:context="com.jgasystems.loginscreen.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/LabelTheme"
+            android:text="JAPP Systems Login" />
+        <ImageView
+            android:id="@+id/imLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/japp_logo_final_blue" />
+
+        <EditText
+            android:id="@+id/etUser"
+            style="@style/EditTextTheme"
+            android:inputType="textPersonName"
+            android:hint="User"
+            android:text="" />
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/EditTextTheme"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/bLogin"
+            style="@style/ButtonTheme"
+            android:text="Log in" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
